@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Monaja {
+public class Darasa {
 
     List<String> darasa = new ArrayList<String>();
 

@@ -37,6 +37,16 @@ public String remove_member(String element){
     
     return element;
 }
+public  void getgetDarasaMembers(){
+
+	for(position=0;position<member.length;position++){
+          new TechFrontChallenge().remove_member(member[position]);
+          System.out.println(position+":"+member[position]);
+      }	
+	
+}
+	
+	
     public static void main(String[] args) 
     {
         // TODO code application logic here
@@ -53,11 +63,8 @@ public String remove_member(String element){
             
             
         }
-        //delete duplicate value
-      for(position=0;position<all;position++){
-          new TechFrontChallenge().remove_member(member[position]);
-          System.out.println(position+":"+member[position]);
-      }
+        new TechFrontChallenge().getgetDarasaMembers();
+     
         
         
        

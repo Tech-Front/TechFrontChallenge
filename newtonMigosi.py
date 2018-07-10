@@ -1,6 +1,6 @@
 class Darasa:
-    def __init__(self, *students):
-        self.students = list(*students)
+    def __init__(self, students):
+        self.students = students
 
     def addClassMember(self, name):
         if name in self.students:

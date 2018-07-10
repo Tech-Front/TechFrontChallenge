@@ -7,7 +7,7 @@
 
 # Part 1
 
-In your favourite language, create an abstract data type representing a class( School class) 
+In your favorite language, create an abstract data type representing a class( School class) 
 Name it Darasa. Darasa should be constructed using a list of strings representing class members. 
 
 Darasa should have methods with specifications as described:
@@ -18,7 +18,7 @@ Function specifications have been listed above the methods to be implemented.
 adds a new  member into the Darasa. 
 This method does not allow for duplicate Darasa members. If this member exists, handle it 
 as you please. 
-arguements: String name 
+arguments: String name 
 returns: Darasa member added or something else if member exists 
 '''
 def addClassMember(name):

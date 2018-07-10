@@ -18,9 +18,7 @@ function Shule() {
   //
   this.getShule = function() {
     const shuleName = this.shuleName;
-    for (var i = 0; i < shuleName.length; i++) {
-      return
-    }
+    return [shuleName, this.shule];
   }
 }
 

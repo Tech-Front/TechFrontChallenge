@@ -32,7 +32,7 @@ public class Darasa {
       
   }
 
-  public static List getClassMembers(){
+  public static List getDarasaMembers(){
       return students;
   }
 
@@ -57,7 +57,7 @@ public class Darasa {
                System.out.println(leavingStudent);
           }
             System.out.println("Class Members Are");
-            System.out.println(Darasa.getClassMembers());
+            System.out.println(Darasa.getDarasaMembers());
 
 
     }

@@ -1,0 +1,55 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Shule {
+
+private String shuleName;
+
+public Shule(String nameShule){
+    shuleName = nameShule;
+}
+
+
+ private Map<String, Object> shule = new HashMap<String, Object>();
+
+ public Map<String,Object> addDarasa(String darasaName, Darasa darasa){
+     shule.put(darasaName,darasa);
+     return  shule;
+ }
+
+
+ public String removeDarasa(String darsaName){
+     shule.remove(darsaName);
+     return "Darasa "+darsaName+ " removed successfully";
+
+ }
+
+ public Map<String,Object> getShule(){
+     return shule;
+ }
+
+
+
+    public static void main(String[] args){
+        Darasa darasa1 = new Darasa();
+        Darasa darasa2 = new Darasa();
+        Darasa darasa3 = new Darasa();
+
+        darasa1.addClassMember("peter");
+        darasa1.addClassMember("andrew");
+        darasa2.addClassMember("peter");
+        darasa2.addClassMember("andrew");
+        darasa3.addClassMember("peter");
+        darasa3.addClassMember("andrew");
+
+        System.out.println(darasa1.removeClassMember("peter"));
+        Shule s = new Shule("JKUAT");
+
+        System.out.println(s.addDarasa("Computer Technology", darasa1));
+        System.out.println(s.addDarasa("Agriculture", darasa2));
+        System.out.println(s.addDarasa("Biology", darasa3));
+
+        System.out.println(s.getShule());
+
+    }
+}

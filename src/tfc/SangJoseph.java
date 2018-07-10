@@ -1,6 +1,6 @@
 package tfc;
 
-public class Main {
+public class SangJoseph {
     public static void main(String[] args) {
         // create instance
         Darasa darasa = new Darasa();

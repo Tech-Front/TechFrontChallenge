@@ -1,9 +1,9 @@
 function Darasa(classMember) {
-  this.classMembers = classMembers;
+  this.classMembers = [];
 
   // Add a class member
   this.addClassMember = function(memberName) {
-    if (this.members.indexOf(memberName) < 0) {
+    if (this.classMembers.indexOf(memberName) === 0) {
       this.classMembers.push(classMembers);
       return 'A members has been added';
     } else {
@@ -14,7 +14,7 @@ function Darasa(classMember) {
   // Remove a class member
   this.removeClassMember = function(memberName) {
     for (var i = 0; i < classMembers.length; i++) {
-      if (this.classMembers[i] == memberName) {
+      if (this.classMembers[i] === memberName) {
         this.classMembers.splice(i, 1);
         return 'A member has been removed';
       }
@@ -23,7 +23,7 @@ function Darasa(classMember) {
 
   // Display the members
   this.displayClassMember = function() {
-    return this.classMembers;
+    return `${this.classMembers} are the class members`;
   }
 }
 }

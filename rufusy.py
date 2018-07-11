@@ -1,50 +1,77 @@
-def addClassMember(name):
-	if name in Darasa:
-		print "Student already in list"
-	else:
-		Darasa.append(name)
-		print "Student added"
+class Darasa:
+	count = 0
+	# add new member to Darasa
+	def addClassMember(self,name):
+		if name in student_list:
+			print "Student already in list"
+		else:
+			student_list.append(name)
+			Darasa.count +=1
+			print "Student added"
 
+	# remove existing member from Darasa
+	def removeClassMember(self,name):
+		if name in student_list:
+			student_list.remove(name)
+			print "Student removed"
+		else:
+			print "Student not found"
 
-def removeClassMember(name):
-	if name in Darasa:
-		Darasa.remove(name)
-		print "Student removed"
-	else:
-		print "Student not found"
+	# show all members in Darasa
+	def getDarasaMembers(self):
+		if Darasa.count > 0:
+			print "These are the members of darasa"
+			for item in student_list: print(item)
+		else:
+			print "Darasa has no members"
 
+student_list = [] 
+student = Darasa()
 
-def getDarasaMembers():
-	if len(Darasa) > 0:
-		print "These are the members of darasa"
-		for item in Darasa: print(item)
-	else:
-		print "Darasa has no members"
-
-
-Darasa = []
-maxLengthList = 5 # maximum number of students that can be added
-
-while len(Darasa) < maxLengthList:
-	print "Add student by name: "
+while Darasa.count < 5:
+	print "Enter name"
 	name = raw_input()
-	addClassMember(name)
+	student.addClassMember(name)
 print ""
-print ""
-print "This the student list"
-print Darasa
-
-print ""
+print student.getDarasaMembers()
 print ""
 print "remove student by name"
 name = raw_input()
-removeClassMember(name)
+student.removeClassMember(name)
 print ""
-print ""
-print "Updated student list"
-print Darasa
+print student.getDarasaMembers()
 
-print ""
-print ""
-getDarasaMembers();
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
 

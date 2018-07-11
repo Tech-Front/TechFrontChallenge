@@ -9,6 +9,7 @@ class Shule{
     // returns Dictionary representation of school
     
     addDarasa(name, darasa){
+        this.shule[name] = {};
         this.shule[name] = darasa;
         return this.shule;
     }

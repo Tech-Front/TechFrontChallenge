@@ -29,7 +29,7 @@ def addClassMember(name):
 '''
 removes member from this Darasa. 
 If member does not exist in the Darasa, handle it as you please. 
-Arguements: String name
+Arguments: String name
 returns: Darasa member removed from class or something else if member does not exist
 '''
 def removeClassMember(name):
@@ -76,7 +76,7 @@ Function specifications have been listed above the methods to be implemented.
 '''
 adds a darasa to the school Registy 
 returns the modified dictionary representation of the school.
-arguements: String darasaName, Darasa darasa
+arguments: String darasaName, Darasa darasa
 returns Dictionary representation of school
 '''
 def addDarasa(name, darasa):
@@ -87,7 +87,7 @@ def addDarasa(name, darasa):
 
 '''
 removes a darasa entry from the school Registry. 
-arguements: String DarasaName 
+arguments: String DarasaName 
 returns: modified Dictionary representation of school
 '''
 def removeDarasa(name): 

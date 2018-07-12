@@ -26,3 +26,9 @@ class Darasa:
         if member in self.members:
             return member
         return 'Not Found'
+
+    """
+    get all members from Darasa  
+    """
+    def getDarasaMembers(self):
+        return self.members

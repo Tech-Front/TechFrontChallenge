@@ -9,3 +9,12 @@ class Darasa:
         if member in self.members:
             return 'Member exists'
         self.members.append(member)
+
+    """
+    remove member from Darasa  
+    """
+    def removeClassMember(self, member):
+    if member in self.members:
+        index_ = self.members.index(member)
+        return self.members.remove(index_)
+    return 'Youre Trying to remove a non existent member'

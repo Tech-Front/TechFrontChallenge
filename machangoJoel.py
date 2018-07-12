@@ -14,7 +14,15 @@ class Darasa:
     remove member from Darasa  
     """
     def removeClassMember(self, member):
-    if member in self.members:
-        index_ = self.members.index(member)
-        return self.members.remove(index_)
-    return 'Youre Trying to remove a non existent member'
+        if member in self.members:
+            index_ = self.members.index(member)
+            return self.members.remove(index_)
+        return 'Youre Trying to remove a non existent member'
+
+    """
+    get member from Darasa  
+    """
+    def getDarasaMember(self, member):
+        if member in self.members:
+            return member
+        return 'Not Found'

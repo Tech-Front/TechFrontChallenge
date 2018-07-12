@@ -1,4 +1,4 @@
-require  'daniel_otieno'
+require_relative  'daniel_otieno'
 
 require_relative  'darasa'
 

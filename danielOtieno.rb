@@ -28,4 +28,10 @@ class Darasa
         end
     end
 
+    def print
+        puts members
+    end
+
+
+
 

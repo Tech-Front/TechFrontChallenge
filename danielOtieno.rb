@@ -11,3 +11,13 @@ class Darasa
             puts "Sorry #{member} already exists"
         end
     end
+
+    def removeClassMember
+        if find member
+            self.members -= [ member ]
+        else
+            puts "Sorry #{member} not found"
+        end
+    end
+
+

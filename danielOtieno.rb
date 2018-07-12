@@ -5,7 +5,7 @@ class Darasa
     end
 
     def addClassMember
-        unless find member
+        unless find_member
             self.members << member
         else
             puts "Sorry #{member} already exists"
@@ -13,7 +13,7 @@ class Darasa
     end
 
     def removeClassMember
-        if find member
+        if find_member
             self.members -= [ member ]
         else
             puts "Sorry #{member} not found"
@@ -21,7 +21,7 @@ class Darasa
     end
 
     def getDarasaMember
-        if find member
+        if find_member
             member
         else
             "Sorry #{member} not found"
@@ -31,6 +31,15 @@ class Darasa
     def print
         puts members
     end
+
+    private
+
+    def find_member
+        return member if members.include? member
+        return false
+    end
+end
+
 
 
 

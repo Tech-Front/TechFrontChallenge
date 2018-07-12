@@ -4,7 +4,7 @@ class Darasa
         @members = members.uniq.collect { |member| member.to_s}
     end
 
-    def add_class_member
+    def add_class_member member
         unless find_member
             self.members << member
         else
@@ -12,7 +12,7 @@ class Darasa
         end
     end
 
-    def remove_class_member
+    def remove_class_member member
         if find_member
             self.members -= [ member ]
         else
@@ -20,7 +20,7 @@ class Darasa
         end
     end
 
-    def get_darasa_member
+    def get_darasa_member member
         if find_member
             member
         else
@@ -34,7 +34,7 @@ class Darasa
 
     private
 
-    def find_member
+    def find_member member
         return member if members.include? member
         return false
     end

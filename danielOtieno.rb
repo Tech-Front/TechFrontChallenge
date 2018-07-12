@@ -20,4 +20,12 @@ class Darasa
         end
     end
 
+    def getDarasaMember
+        if find member
+            member
+        else
+            "Sorry #{member} not found"
+        end
+    end
+
 

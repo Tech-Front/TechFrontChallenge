@@ -32,7 +32,7 @@ class Shule(object):
         for shuleName in shule:
             return shule.items()
 
-#instantiate Shule object as my school
+#instantiate Shule object as mySchool
 mySchool = Shule('Light Academy')
 mySchool.addDarasa('Light Academy', 'Standard2', ["Kyle", "Kimmie"])
 mySchool.addDarasa('Light Acadmey', 'Standard3', ["Hayley", "Matt"])

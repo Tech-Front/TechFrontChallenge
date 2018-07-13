@@ -25,9 +25,10 @@ class Darasa(object):
         print(show)
         return show
 
+'''The commented lines below is an object instantiated
+for testing purposes along with method access'''
 
-
-myClass = Darasa('myClass', ["Timothy", "Mary"])
-myClass.addClassMember('Mikey')
-myClass.removeClassMember('Camy')
-myClass.getDarasaMembers()
+#myClass = Darasa('myClass', ["Timothy", "Mary"])
+#myClass.addClassMember('Mikey')
+#myClass.removeClassMember('Camy')
+#myClass.getDarasaMembers()

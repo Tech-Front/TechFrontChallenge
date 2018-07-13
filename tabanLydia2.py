@@ -2,15 +2,15 @@ from tabanLydia import Darasa
 
 
 class Shule(object):
-    def __init__(self, schoolName, darasa):
-        self.shule = {'className': Darasa, 'shuleName': schoolName}
-        self.darasa = darasa
+    def __init__(self, shuleName):
+        self.shuleName = shuleName
+        self.shule = {'className': Darasa, 'schoolName': shuleName}
 
-    def addDarasa(self, schoolName, darasa, shule):
+    def addDarasa(self, shuleName, darasa, shule):
         self.darasa = Darasa 
-        self.schoolName = schoolName
+        self.shuleName = shuleName
 
-        if darasa not in schoolName:
+        if darasa not in shuleName:
             shule.append(Darasa)
         else:
             print ("Oops! That class already exists")
@@ -26,13 +26,14 @@ class Shule(object):
             print ("No such class exists")
         return shule 
 
-    def getShule(self, darasa, schoolName):
+    def getShule(self, darasa, shuleName):
         self.darasa = Darasa
-        shule = {'className': Darasa, 'shuleName': schoolName}
-        for schoolName in shule:
-            return shule
+        shule = {'className': Darasa, 'shuleName': shuleName}
+        for shuleName in shule:
+            return shule.items()
 
-mySchool = Shule('Light Academy', Darasa('Standard1', ["Mike", "Anna"]))
+#instantiate Shule object as my school
+mySchool = Shule('Light Academy')
 mySchool.addDarasa('Light Academy', 'Standard2', ["Kyle", "Kimmie"])
 mySchool.addDarasa('Light Acadmey', 'Standard3', ["Hayley", "Matt"])
 mySchool.getShule('Standard 2', 'Light Academy' )
